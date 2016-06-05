@@ -33,8 +33,12 @@ public class ArrayList<T> {
         if (fillsize == elements.length) {
             ensureCapacity();
         }
-        elements[fillsize+1] = element;
+        elements[fillsize] = element;
         this.fillsize++;
+    }
+    public void remove(int index){
+        System.arraycopy(elements,index+1,elements,index, size-1-index);
+        fillsize--;
     }
     public T get(int index) {
         if (index > elements.length|| index < 0)

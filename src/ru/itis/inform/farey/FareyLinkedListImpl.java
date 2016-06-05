@@ -3,7 +3,7 @@ package ru.itis.inform.farey;
 import ru.itis.inform.lists.*;
 
 public class FareyLinkedListImpl {
-    private LinkedList<RationalNum> list;
+    LinkedList<RationalNum> list;
 
     public void runFarey(int n) {
         LinkedList<RationalNum> list = new LinkedList<>();
