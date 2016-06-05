@@ -23,9 +23,7 @@ public class ArrayList<T> {
         int newSize = size * 3 / 2;
         Object[] newArray = new Object[newSize];
 
-        for (int i = 0; i < size; i++) {
-            newArray[i] = elements[i];
-        }
+        System.arraycopy(elements, 0, newArray, 0, size);
 
         this.elements = newArray;
         size = newSize;

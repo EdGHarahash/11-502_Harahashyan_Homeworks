@@ -11,7 +11,7 @@ public interface Iterator<T> {
      * Возвращает следующий элемент
      * @return возвращаемый элемент
      */
-    void next();
+    T next();
 
     T peekNext();
 
@@ -21,7 +21,7 @@ public interface Iterator<T> {
      * Возвращает предыдущий элемент
      * @return возвращаемый элемент
      */
-    void previous();
+    T previous();
 
     T peekPrevious();
 

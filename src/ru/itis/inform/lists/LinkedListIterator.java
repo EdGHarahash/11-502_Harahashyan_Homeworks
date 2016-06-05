@@ -1,15 +1,16 @@
 package ru.itis.inform.lists;
 
 public class LinkedListIterator<T> implements Iterator<T> {
-    Node<T> current;
+    Node <T> current;
     @Override
     public boolean hasNext() {
         return current!= null;
     }
 
-    @Override
-    public void next() {
+    public T next() {
+        T value = this.current.getValue();
         this.current = current.getNext();
+        return value;
     }
 
     @Override
@@ -23,9 +24,9 @@ public class LinkedListIterator<T> implements Iterator<T> {
     }
 
     @Override
-    public void previous() {
+    public T previous() {
         if (current.getPrevious() != null) {
-            current = current.getPrevious();
+            return current.getPrevious().getValue();
         } else {
             throw new NullPointerException();
         }
