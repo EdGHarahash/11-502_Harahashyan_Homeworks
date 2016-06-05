@@ -1,4 +1,4 @@
-package farey;
+package ru.itis.inform.farey;
 
 
 public class RationalNum {

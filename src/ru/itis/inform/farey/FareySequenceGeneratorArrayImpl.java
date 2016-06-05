@@ -1,4 +1,4 @@
-package farey;
+package ru.itis.inform.farey;
 
 public class FareySequenceGeneratorArrayImpl {
     private final int MAX_FAR_LENGHT = 100;

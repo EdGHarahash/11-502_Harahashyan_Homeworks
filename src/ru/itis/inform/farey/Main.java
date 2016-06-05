@@ -1,4 +1,4 @@
-package farey;
+package ru.itis.inform.farey;
 import java.util.Scanner;
 
 public class Main {
